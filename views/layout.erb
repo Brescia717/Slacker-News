@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Slacker News</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="nav">
+        <ul>
+          <li id="pcombo">
+            <a href="#">P</a>
+          </li>
+          <li id="title">
+            <a href="/">Slacker News</a>
+          </li>
+          <li id="new">
+            <a href="/">new</a>
+          </li>
+          <li> | </li>
+          <li id="submit-article">
+            <a href="/submit">submit article</a>
+          </li>
+          <li id="login">
+            login
+          </li>
+        </ul>
+      </div>
+
+      <%= yield %>
+      <div class="more">
+      <a href="#">More</a>
+      </div>
+      <div class="footer">
+      <form id="search-bar">
+        <a href="#">Search:<input type="text" name="title" size="20"></a>
+      </form>
+
+      <a href="#">Guidelines</a> | <a href="#">FAQ</a> | <a href="#">Lists</a> | <a href="#">Bookmarklet</a> | <a href="#">DMCA</a> | <a href="#">News News</a> | <a href="#">Bugs and Feature Requests</a> | <a href="#">F Combinator</a> | <a href="#">Apply</a> | <a href="#">Library</a> | <a href="#">Contact</a>
+      </div>
+    </div>
+  </body>
+</html>
