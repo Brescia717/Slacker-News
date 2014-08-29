@@ -2,8 +2,8 @@
   <ol>
     <% @results.each do |article| %>
       <li>
-        <p><a href="http://<%= article[:url] %>" target="_blank"><%= article[:title] %></a> (<%= article[:url] %>)</p>
-        <p class="comment"><%= article[:description] %></p>
+        <p><a href="http://<%= article['url'] %>" target="_blank"><%= article['title'] %></a> (<%= article['url'] %>)</p>
+        <p class="comment"><%= article['description'] %></p>
       </li>
     <% end %>
   </ol>
